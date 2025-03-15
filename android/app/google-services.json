@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "930031122918",
+    "project_id": "creativeweb-2c424",
+    "storage_bucket": "creativeweb-2c424.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930031122918:android:73b517f9608e9c4647fe27",
+        "android_client_info": {
+          "package_name": "com.example.creativeweb"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDH8tTTriSjByC2OedduJwavA4plw2yVEE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
