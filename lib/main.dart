@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
       title: 'Sign In Example',
       initialRoute: '/', // Set initial route to SignInPage
       routes: {
-        '/': (context) => AdminHomePage(), // SignInPage route
+        '/': (context) => SignInPage(), // SignInPage route
         '/admin': (context) => AdminHomePage(), // Admin Home route
         '/user': (context) => UserHomePage(), // User Home route
       },

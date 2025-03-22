@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '/navbar.dart';
 import 'package:creativeweb/profile_page.dart';
+import 'admin_task_management.dart';
 
 class TaskPage extends StatefulWidget{
   @override
@@ -164,8 +165,8 @@ class _TaskPageState extends State<TaskPage> {
                 borderRadius: BorderRadius.only(
                   topRight: Radius.circular(40),
                   topLeft: Radius.circular(40),
-                  bottomLeft: Radius.circular(40),
-                  bottomRight: Radius.circular(40),
+                 // bottomLeft: Radius.circular(40),
+                 // bottomRight: Radius.circular(40),
                 ),
               ),
               child: Column(
@@ -220,7 +221,26 @@ class _TaskPageState extends State<TaskPage> {
                           style: TextStyle(color: Colors.white)
                       ),
                     ),
+                  ),
+                  SizedBox(height: 85),
+                  //Button to navigate to anther page for editing and removing Tasks
+                  Center(
+                    child: ElevatedButton(
+                        onPressed: (){
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => ManageTaskPage())
+                          );
+                        },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Color(0xFF252422),
+                        padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15),
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                      ),
+                        child: Text("Manage Task", style: TextStyle(color: Colors.white)),
+                    ),
                   )
+
 
                 ],
               ),

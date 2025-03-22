@@ -145,8 +145,8 @@ class _SalaryPageState extends State<SalaryPage>{
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(40),
                   topRight: Radius.circular(40),
-                  bottomRight: Radius.circular(40),
-                  bottomLeft: Radius.circular(40)
+                  //bottomRight: Radius.circular(40),
+                  //bottomLeft: Radius.circular(40)
                 ),
               ),
               child: Column(
@@ -183,7 +183,7 @@ class _SalaryPageState extends State<SalaryPage>{
                   if (_userDetails != null) _buildUserDetails(),
                   _buildTextField(_salaryController, "Salary"),
                   _buildTextField(_dateController, "Date (DD/MM/YYYY)"),
-                  SizedBox(height: 150),
+                  SizedBox(height: 320),
                   Center(
                     child: ElevatedButton(
                         onPressed: _submitSalary,

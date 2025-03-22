@@ -99,7 +99,7 @@ class _AdminHomePageState extends State<AdminHomePage>{
                         MaterialPageRoute(builder: (context) => TaskPage())
                     ),
                   ),
-                  //announcements
+                  //create account
                   _buildGridButton(
                     icon: 'assets/edit.png',
                     label: "Create Account",
@@ -108,7 +108,7 @@ class _AdminHomePageState extends State<AdminHomePage>{
                         MaterialPageRoute(builder: (context) => CreateAnn()),
                     ),
                   ),
-                  //create account
+                  //announcements
                   _buildGridButton(
                     icon: 'assets/announcementsnew.png',
                       label: "Announcements",
