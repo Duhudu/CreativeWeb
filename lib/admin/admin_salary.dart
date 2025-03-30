@@ -106,11 +106,11 @@ class _SalaryPageState extends State<SalaryPage>{
         ),
         // back ground color and the app bar icon color
         backgroundColor: Color(0xFF252422),
-        iconTheme: IconThemeData(color: Colors.white),
+        iconTheme: IconThemeData(color: Colors.black45),
         //btn for profile page
         actions: [
           IconButton(
-            icon: Icon(Icons.account_circle, color: Colors.white,),
+            icon: Icon(Icons.account_circle, color: Colors.black45,),
             onPressed: (){
               //Navigate to the profile page
               Navigator.push(
@@ -193,10 +193,10 @@ class _SalaryPageState extends State<SalaryPage>{
                           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
                         ),
                       child: Text(
-                          "Submit Salary",
+                          "Submit Sa",
                           style:
                           TextStyle(
-                              color: Colors.white
+                              color: Colors.red
                           )
                       ),
                     ),
