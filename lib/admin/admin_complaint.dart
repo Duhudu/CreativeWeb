@@ -67,17 +67,17 @@ class _ComplaintPageState extends State<ComplaintPage> {
             Text(
               "Employee Complaints",
               style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 24,
+                  color: Colors.red,
+                  fontSize: 26,
                   fontWeight: FontWeight.bold
               ),
             ),
-            SizedBox(height: 40),
+            SizedBox(height: 49),
             Container(
               width: screenWidth * 90,
               padding: EdgeInsets.all(30),
               decoration: BoxDecoration(
-                color: Colors.white,
+                color: Colors.red,
                 borderRadius: BorderRadius.only(
                   topRight: Radius.circular(40),
                   topLeft: Radius.circular(40),
