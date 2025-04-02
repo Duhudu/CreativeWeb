@@ -1,7 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:creativeweb/userNavBar.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:creativeweb/userNavBar.dart';
 import 'package:creativeweb/userProfile.dart';
@@ -67,8 +66,8 @@ class _SalaryPageState extends State<SalaryPage>{
             Text(
               "Salary",
               style: TextStyle(
-                color: Colors.black12,
-                fontSize: 26,
+                color: Colors.white,
+                fontSize: 24,
                 fontWeight: FontWeight.bold
               ),
             ),
@@ -113,10 +112,10 @@ class _SalaryPageState extends State<SalaryPage>{
                   // If no salary data
                   if (!snapShot.hasData || snapShot.data!.isEmpty) {
                     return Center(
-                        child: Text("No..! Salary Information Available",
+                        child: Text("No Salary Information Available",
                             style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 25,
+                              color: Colors.white,
+                              fontSize: 24,
                               fontWeight: FontWeight.bold
                             )
                         )
@@ -167,7 +166,7 @@ class _SalaryPageState extends State<SalaryPage>{
                             Text(
                               "${salary['paymentMethod']}",
                               style: TextStyle(
-                                fontSize: 19,
+                                fontSize: 16,
                                 color: Colors.black,
                               ),
                             ),
