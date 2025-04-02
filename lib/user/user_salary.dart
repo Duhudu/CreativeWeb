@@ -67,8 +67,8 @@ class _SalaryPageState extends State<SalaryPage>{
             Text(
               "Salary",
               style: TextStyle(
-                color: Colors.white,
-                fontSize: 24,
+                color: Colors.black12,
+                fontSize: 26,
                 fontWeight: FontWeight.bold
               ),
             ),
@@ -113,10 +113,10 @@ class _SalaryPageState extends State<SalaryPage>{
                   // If no salary data
                   if (!snapShot.hasData || snapShot.data!.isEmpty) {
                     return Center(
-                        child: Text("No Salary Information Available",
+                        child: Text("No..! Salary Information Available",
                             style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 24,
+                              color: Colors.black,
+                              fontSize: 25,
                               fontWeight: FontWeight.bold
                             )
                         )
@@ -167,7 +167,7 @@ class _SalaryPageState extends State<SalaryPage>{
                             Text(
                               "${salary['paymentMethod']}",
                               style: TextStyle(
-                                fontSize: 16,
+                                fontSize: 19,
                                 color: Colors.black,
                               ),
                             ),
