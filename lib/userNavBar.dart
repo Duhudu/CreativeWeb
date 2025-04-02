@@ -22,8 +22,8 @@ class UserNavBar extends StatelessWidget{
         children: [
           UserAccountsDrawerHeader(
             //display user name and email taken from the firebase bd
-            //accountName: Text(user?.displayName ?? 'Test'),
-            accountName: Text(user?.displayName?.isEmpty ?? true ? 'No name' : user?.displayName ?? 'No name'),
+            accountName: Text(user?.displayName ?? 'Test'),
+            //accountName: Text(user?.displayName?.isEmpty ?? true ? 'No name' : user?.displayName ?? 'No name'),
             accountEmail: Text(user?.email ?? 'No name'),
             //user acc pic(default)
             currentAccountPicture: CircleAvatar(
